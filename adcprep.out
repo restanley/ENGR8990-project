@@ -1,0 +1,37 @@
+ INFO: Processing --np
+ INFO: Processing --partmesh
+ File                                                      fort.14
+ WAS FOUND!  Opening & Processing file
+
+ from alloc_main1: 
+  
+ memory currently allocated =   1093202780  bytes
+ memory high water mark     =  -2122782288  bytes
+  
+  
+ memory currently allocated =   1330016660  bytes
+ memory high water mark     =   1566830540  bytes
+  
+ Global Grid file read successfully.
+INFO: This mesh has 0 weir node pairs.
+INFO: Maximum number of duals for any weir node is 0.
+ maximum co-nodes for any node =           18
+ edge count =      1545509
+ 
+ Grid Partition Data
+ METIS 4.0 will require approximately    175550952  bytes
+ Total Edges Cut =        29940
+INFO: Writing mesh partition to partmesh.txt.
+ INFO: METIS has partitioned nodes successfully.
+  
+ memory currently allocated =   1330016660  bytes
+ memory high water mark     =   1566830540  bytes
+  
+ INFO: Processing --np
+ INFO: Processing --prepall
+ File                                                      fort.14
+ WAS FOUND!  Opening & Processing file
+
+ File fort.15                                                     
+ WAS FOUND!  Opening & Processing file
+

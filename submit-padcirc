@@ -1,0 +1,22 @@
+#!/bin/bash
+#SBATCH --job-name=padcirc              # Job Name
+#SBATCH --output=padcirc.%j.out         # Standard output log
+#SBATCH --error=padcirc.%j.err          # Standard error log
+#SBATCH --partition=batch               # Partition (queue) name
+#SBATCH --nodes=1                       # Number of nodes
+#SBATCH --ntasks=12                     # Number of MPI tasks
+#SBATCH --ntasks-per-node=12            # How many tasks on each node
+#SBATCH --cpus-per-task=1               # Number of cores per MPI rank
+#SBATCH --time=12:00:00                 # Time limit hh:mm:ss
+
+ADCHOME=/work/engr8990/instructor_data/adcirc/adcirc-noaa.stofs.2d.glo.v1.1.0r2-install/bin
+
+ml netCDF-Fortran
+
+cd $SLURM_SUBMIT_DIR
+
+date > run.begin
+mpirun -env I_MPI_FABRICS tcp $ADCHOME/padcirc >& $SLURM_JOB_NAME.out
+date > run.end
+
+exit 0

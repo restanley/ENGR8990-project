@@ -1,0 +1,363 @@
+AB            ! 32 CHARACTER ALPHANUMERIC RUN DESCRIPTION
+ Tides        !  24 CHARACTER ALPANUMERIC RUN IDENTIFICATION
+ 1   20.0   1   50   1000.0  ! NFOVER - NONFATAL ERROR OVERRIDE OPTION
+ 0      ! NABOUT - ABREVIATED OUTPUT OPTION PARAMETER                           
+ 1000   ! NSCREEN - UNIT 6 OUTPUT OPTION PARAMETER                              
+ 0      ! IHOT - HOT START PARAMETER                                            
+ 2      ! ICS - COORDINATE SYSTEM SELECTION PARAMETER                           
+ 0      ! IM - MODEL SELECTION PARAMETER                                        
+ 1      ! NOLIBF - BOTTOM FRICTION TERM SELECTION PARAMETER                     
+ 2      ! NOLIFA - FINITE AMPLITUDE TERM SELECTION PARAMETER                    
+ 1      ! NOLICA - SPATIAL DERIVATIVE CONVECTIVE SELECTION PARAMETER            
+ 1      ! NOLICAT - TIME DERIVATIVE CONVECTIVE TERM SELECTION PARAMETER         
+ 2      ! NWP - VARIABLE BOTTOM FRICTION AND LATERAL VISCOSITY OPTION PARAMETER
+primitive_weighting_in_continuity_equation
+mannings_n_at_sea_floor
+ 1      ! NCOR - VARIABLE CORIOLIS IN SPACE OPTION PARAMETER                    
+ 1      ! NTIP - TIDAL POTENTIAL OPTION PARAMETER                               
+ 12      ! NWS - WIND STRESS AND BAROMETRIC PRESSURE OPTION PARAMETER            
+ 1      ! NRAMP - RAMP FUNCTION OPTION                                          
+ 9.81   ! G - ACCELERATION DUE TO GRAVITY - DETERMINES UNITS                    
+ -3     ! TAU0 - WEIGHTING FACTOR IN GWCE                                       
+ 5    ! DT - TIME STEP (IN SECONDS)                                           
+ 0.00   ! STATIM - STARTING TIME (IN DAYS)                                      
+ 0.00   ! REFTIM - REFERENCE TIME (IN DAYS)                                        
+ 300.0  ! WTIMINC 
+ 6.75   ! RNDAY - TOTAL LENGTH OF SIMULATION (IN DAYS)                          
+ 0.5    ! DRAMP - DURATION OF RAMP FUNCTION (IN DAYS)                           
+ 0.35 0.30 0.35                 ! TIME WEIGHTING FACTORS FOR THE GWCE EQUATION          
+ 0.01 2 1 0.05                  ! H0, NODEDRYMIN, NODEWETRMP, VELMIN                    
+ -79.0 35.0                     ! SLAM0,SFEA0 - CENTER OF CPP PROJECTION (NOT USED IF IC
+ 0.0025 10.0 10.0 0.33333	! FFACTOR,HBREAK,FTHETA,FGAMMA
+ 5.00                           ! ESL - LATERAL EDDY VISCOSITY COEFFICIENT; IGNORED IF N
+ 0.0                            ! CORI - CORIOLIS PARAMETER - IGNORED IF NCOR = 1        
+ 1                              ! NTIF - TOTAL NUMBER OF TIDAL POTENTIAL CONSTITUENTS BE
+1                              ! NBFR - TOTAL NUMBER OF FORCING FREQUENCIES ON OPEN BOU
+STEADY                         ! ALPHANUMERIC DATA FOR OPEN OCEAN BOUNDARY FORCING DATA
+0.0000              1.000  0.000
+STEADY                         ! ALPHA NUMERIC DESCRIPTION OF ELEVATION BOUNDARY FORCI
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+0.0    1.0
+
+
+100.0                              ! ANGINN : INNER ANGLE THRESHOLD
+0  0.0 90.0 72                     ! NOUTE,TOUTSE,TOUTFE,NSPOOLE:ELEV STATION OUTPUT INFO
+-540114                                  ! TOTAL NUMBER OF ELEVATION RECORDING STATIONS
+
+0  0.0 90.0 72                     ! NOUTV,TOUTSV,TOUTFV,NSPOOLV:VEL STATION OUTPUT INFO (U
+-540114                                  ! TOTAL NUMBER OF VELOCITY RECORDING STATIONS
+
+1  .5  6.75  108000  ! NOUTM,TOUTSM,TOUTFM,NSPOOLM:METEO STATION OUTPUT INFO (UNITS 71/72)
+-540114                  ! TOTAL NUMBER OF METEOROLOGICAL RECORDING STATIONS
+
+1  .5  6.75  108000                     ! NOUTGE,TOUTSGE,TOUTFGE,NSPOOLGE : GLOBAL ELEVATION OUT
+1  .5  6.75  108000                     ! NOUTGV,TOUTSGV,TOUTFGV,NSPOOLGV : GLOBAL VELOCITY  OUT
+1  .5  6.75  108000                     ! NOUTGW,TOUTSGW,TOUTFGW,NSPOOLGW : GLOBAL WIND OUTPUT INFO 
+ 0                                   ! NHARFR - NUMBER OF CONSTITUENTS TO BE INCLUDED IN THE 
+ 45.0  90.0  60  0.0                 ! THAS,THAF,NHAINC,FMV - HARMONIC ANALYSIS PARAMETERS   
+ 0 0 0 0                             ! NHASE,NHASV,NHAGE,NHAGV - CONTROL HARMONIC ANALYSIS AN
+0 8640                              ! NHSTAR,NHSINC - HOT START FILE GENERATION PARAMETERS  
+ 1  0  1.00E-10  25 0                ! ITITER, ISLDIA, CONVCR, ITMAX, ILUMP - ALGEBRAIC SOLUT
+53K     
+University of Georgia
+ADCIRC
+Sapelo2
+Hindcast
+www.coast.engr.uga.edu
+Model time is relative to UTC.
+sapelo
+mbilskie@uga.edu
+YYYY-MM-DD HH:MM:SS
+&metControl invertedBarometerOnElevationBoundary = .true. /
+
+
